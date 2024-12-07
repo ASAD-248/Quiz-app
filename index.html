@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+</head>
+<body>
+
+  <section id="SectionMainpage">
+    <nav>
+      <div class="logo">
+        <!-- <h1>Quiz app</h1> -->
+         <img src="./assets/img/20210326130225825127935.jpg" alt="">
+      </div>
+      <div class="menue_icons">
+        <div class="txt">
+          <span>V 0.1 BETA</span>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="content">
+        <h2>Quiz Application</h2>
+        <div class="txt">
+          <h1>Saylani Mass It Training Program</h1>
+          <p>Saylani Mass IT Training program is an institute 
+            who delivers latest IT education (FREE OF COST). <br> Saylani Mass Training Department is one of the department which is
+             running under Saylani Welfare Trust Management.</p>
+             <div class="btns">
+              <span>Start Your Exam Here </span> 
+              <div class="btnwrap">
+              <button  onclick="SectionDisplay2()" class="sign_btn btn">Sign Up</button>
+              <button onclick="SectionDisplay()" class="log_btn btn">Log in</button>
+              </div>
+             </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- *****///*****  login form section  *****///*****  -->
+     <section class="login_form d-none" id="LoginForm"> 
+    <div class="content_log">
+      <div class="form">
+        <div class="row">
+          <div class="heading">
+            <h1>
+              Student Log in
+            </h1>
+          </div>
+        </div>
+        <div class="row_inp">
+          <label for=""><i class="fa-solid fa-envelope"></i> Your email</label>
+          <input class="email_inp" required  placeholder="Enter Email Address" type="email" id="loginEmail" >
+        </div> 
+        <div class="row_inp">
+          <label for=""><i class="fa-solid fa-lock"></i> Your password</label>
+          <input class="email_inp" required placeholder="Enter your password" type="password" id="loginPassword" >
+        </div> 
+        <div class="btn_row">
+          <button onclick="loginNewpage()" class="log_btn" id="loginNewpage">Log in</button>
+        </div>
+      </div>
+    </div>
+  </section>   
+    <!-- *****///*****  registration form section  *****///*****  -->
+       <section  id="SignUp" class="login_form regis_form d-none">  
+    <div class="content_log">
+      <div class="form">
+        <div class="row">
+          <div class="heading">
+            <h1>
+              Student Registration Form
+            </h1>
+          </div>
+        </div>
+        <div class="row_inp">
+          <label for=""><i class="fa-solid fa-user"></i> Your Name</label>
+          <input class="email_inp" placeholder="Enter Your Full Name" type="text" id="userName">
+        </div> 
+        <div class="row_inp">
+          <label for=""><i class="fa-solid fa-envelope"></i> Your email</label>
+          <input class="email_inp" placeholder="Enter Email Address" type="email" id="signupEmail" required>
+        </div> 
+        <div class="row_inp">
+          <label for=""><i class="fa-solid fa-lock"></i> Your password</label>
+          <input class="email_inp" placeholder="Enter your password" type="password" id="signupPassword" required>
+        </div> 
+        <div class="btn_row">
+          <button onclick="displayLogin()" class="log_btn">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </section>   
+    <!-- app enterance section  *****///*****  --> 
+  
+
+
+
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/1ac82f4868.js" crossorigin="anonymous"></script>
+</body>
+</html>

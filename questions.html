@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+</head>
+<body>
+
+  <section class="subject_page section">
+    <nav>
+      <div class="logo">
+        <!-- <h1>Quiz app</h1> -->
+         <img src="./assets/img/20210326130225825127935.jpg" alt="">
+      </div>
+      <div class="menue_icons">
+        <div class="txt">
+            <button class="res_btn">Result</button>
+            <span class="user_name">User</span>
+        </div>
+        <div class="version_box logout">
+            <span><a href=""><i class="fa-solid fa-right-to-bracket"></i></a></span>
+        </div>
+      </div>
+    </nav> 
+    <!-- nav closed -->
+    <div class="container_sub">
+        <div class="question_content">
+            <div class="ques_row">
+                <div class="head_row" id="quizWindow">
+                    <h1 id="question " >Whta does HTML stand for ?</h1>
+                </div>
+                <div class="options q_row">
+                   <h3> <input type="radio" value="Hyper text markup language" id="option1" name="quizOption">
+                    <label id="label1" for="option1">Hyper text markup language</label></h3>
+                </div>
+                <div class="options q_row">
+                    <h3> <input type="radio" value="How to meet ladies" id="option2" name="quizOption">
+                        <label id="label2" for="option2">How to meet ladies</label></h3>
+                </div>
+                <div class="options q_row">
+                    <h3> <input type="radio" value="Home tool markup language" id="option3" name="quizOption">
+                        <label id="label3" for="option3">Home tool markup language</label></h3>
+                </div>
+                <div class="options q_row">
+                    <h3> <input type="radio" value="Hyperlink and text markup language" id="option4"  name="quizOption">
+                        <label id="label4" for="option4">Hyperlink and   text markup language</label></h3>
+                </div>
+
+                <div class="options q_row">
+                    <h3> <input type="radio" value="Hyperlink and   text markup language" id="option5" name="quizOption">
+                        <label id="label5" for="option5">Hyperlink and   text markup language</label></h3>
+                </div>
+            </div>
+            <div class="btn_row">
+                <button  onclick="next()" class="nxt_btn">Next</button>
+            </div>
+        </div>  
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+  <script src="https://kit.fontawesome.com/1ac82f4868.js" crossorigin="anonymous"></script>
+</body>
+</html>
